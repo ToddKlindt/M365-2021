@@ -1,0 +1,28 @@
+{
+    "$schema": "schema.json",
+    "actions":
+    [
+        {
+            "verb": "createSiteColumn", 
+            "fieldType": "DateTime",
+            "internalName": "ContractDate", 
+            "displayName": "Contract Date", 
+            "isRequired": false
+        },
+        {
+            "verb": "createContentType",
+            "name": "Vendor Contract",
+            "description": "Contract with one of our vendors",
+            "id": "0X0101004DACF3C50C7E0542948BEB7CD1E89CC503",
+            "hidden": false,
+            "subactions":
+                [
+                {
+                    "verb": "addSiteColumn",
+                    "internalName": "ContractDate"
+                }
+            ]
+        }
+    ]
+}
+
